@@ -1,0 +1,354 @@
+﻿body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f8f3f2;
+    color: #202425;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #132530;
+    color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.row {
+    
+    margin-block-start: 2rem;
+}
+    header h1 {
+        
+        font-size: 3.5rem;
+        margin: 0;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    header nav a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #b5a793;
+        font-weight: 400;
+        transition: color 0.3s ease;
+    }
+
+        header nav a:hover {
+            color: #f8f9fa;
+        }
+
+section {
+    
+    padding: 50px 20px;
+}
+
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 2rem;
+    /* margin-bottom: .5rem; */
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--bs-heading-color, inherit);
+}
+
+h3 {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+h2 {
+    
+    font-family: 'Roboto', sans-serif;
+    color: #9a4c2e;
+    margin-bottom: 20px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.h2, h2 {
+    font-size: calc(1.7rem + .9vw);
+}
+
+.contactform {
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+p, ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #202425;
+}
+
+ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0;
+}
+
+
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+    .skills .skill {
+        flex: 1 1 calc(33.333% - 20px);
+        margin: 10px;
+        padding: 20px;
+        text-align: center;
+        background-color: #ffffff;
+        border: 1px solid #b5a793;
+        border-radius: 8px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .skills .skill:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+footer {
+    background-color: #132530;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer p {
+    color:aliceblue;
+}
+
+form .form-control {
+    border-radius: 5px;
+}
+
+form .btn-primary {
+    background-color: #9a4c2e;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+    form .btn-primary:hover {
+        background-color: #b5a793;
+    }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.img-fluid {
+    max-width: 60%;
+    height: 50%;
+}
+
+
+
+
+
+.py-5 {
+    padding-top: 6rem !important;
+    /* padding-bottom: 3rem !important; */
+}
+
+/* General container styling */
+.edu .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 5rem;
+}
+
+.edu .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+}
+
+/* Styling for the columns */
+.edu .col-md-6 {
+    flex: 1 1 calc(50% - 20px);
+    max-width: 45%;
+    padding: 20px;
+    border: 1px solid #495057;
+    border-radius: 100px;
+    background-color: #c2c2c2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+    /* Center text inside the boxes */
+   .edu .col-md-6 h3, .col-md-6 p {
+        margin: 10px 0;
+    }
+
+    /* Hover effect for the columns */
+    .edu .col-md-6:hover {
+        transform: scale(1.05); /* Slightly enlarge the box */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow */
+        background-color: #dee2e6; /* Subtle color change */
+    }
+
+/* Responsive design for smaller screens */
+.edu {
+    @media (max-width: 768px) {
+        .col-md-6 {
+            flex: 1 1 100%; /* Full width on smaller screens */
+            max-width: 100%;
+        }
+    }
+}
+
+
+
+/* General Styling */
+/*.about-me {*/
+    /*  background-color: #f8f9fa;*/
+    /* padding: 50px 0;
+}*/
+    /* Styling the text column */
+
+
+
+    .text-column h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #9a4c2e;
+    margin-bottom: 20px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.text-column p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: #202425;
+    line-height: 1.6;
+}
+
+/* Styling the buttons */
+.btn {
+    font-size: 1rem;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+    .btn:hover {
+        transform: scale(1.1);
+    }
+
+/* Styling social icons */
+.social-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+    .social-icon:hover {
+        transform: scale(1.1);
+    }
+
+/* Styling the profile image */
+.my-photo {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+  /*  .my-photo:hover {
+        transform: scale(1.1);
+    }*/
+
+#about-photo {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+    #about-photo.visible {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .text-column {
+        text-align: center;
+    }
+
+    .d-flex {
+        justify-content: center;
+    }
+
+    .image-column {
+        text-align: center;
+    }
+
+    .social-icon {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-column h2 {
+        font-size: 1.8rem;
+    }
+
+    .text-column p {
+        font-size: 0.95rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .social-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .my-photo {
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 576px) {
+    .text-column h2 {
+        font-size: 1.5rem;
+    }
+
+    .text-column p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.85rem;
+        padding: 7px 14px;
+    }
+
+    .social-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .my-photo {
+        max-width: 250px;
+    }
+}
+
+
+

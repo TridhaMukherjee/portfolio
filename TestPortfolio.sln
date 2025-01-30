@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1A266262-14B1-41CB-A6F2-FBADFE9BBFA1}"
+	ProjectSection(SolutionItems) = preProject
+		index.html = index.html
+		scripts.js = scripts.js
+		styles.css = styles.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{1EA9D8BD-D4CD-47AE-9FA5-087CAE97E269}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1EA9D8BD-D4CD-47AE-9FA5-087CAE97E269} = {1A266262-14B1-41CB-A6F2-FBADFE9BBFA1}
+	EndGlobalSection
+EndGlobal
